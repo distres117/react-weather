@@ -6,6 +6,11 @@ var React = require('react'),
     About = require('About'),
     Examples = require('Examples');
 
+//Load Foundation
+
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
